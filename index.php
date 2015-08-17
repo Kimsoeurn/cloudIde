@@ -5,7 +5,12 @@ $app->get('/', function () use ($app){
     $app->render('template.php');
 });
 $app->get('/hello', function (){
-    var_dump("Hello Slim Framework");
+    $pdo = new PDO('mysql:host=localhost;dbname=dbms', 'kimsoeurn', '');
+    $sql = "select * from users";
+    $result = $pdo->query($sql);
+    foreach ($result as $row) {
+        var_dump($row);
+    }
 });
 $app->run();
 
