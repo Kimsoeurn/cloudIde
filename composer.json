@@ -1,0 +1,14 @@
+{
+    "name": "root/workspace",
+    "description": "Buiding Simple App using Slim Micro Framework",
+    "require": {
+        "slim/slim": "^2.6"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sok Kimsoeurn",
+            "email": "soeurn007@gmail.com"
+        }
+    ]
+}
